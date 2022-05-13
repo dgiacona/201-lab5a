@@ -90,7 +90,6 @@ function sumArray(sumArr) { //eslint-disable-line
   let myStr = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${total} is their sum.`;
 
   return [total,myStr];
-
 }
 
 // Here is the test for sumArray(); uncomment it to run it
