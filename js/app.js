@@ -89,7 +89,7 @@ function sumArray(sumArr) { //eslint-disable-line
 
   let myStr = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${total} is their sum.`;
 
-  return [total,myStr]
+  return [total,myStr];
 
 }
 
@@ -111,11 +111,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+  let prod = multiply(multArr[0],multArr[1])[0];
+  prod = multiply(prod,multArr[2])[0];
 
+  let myStr = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${prod}.`;
+
+  return [prod, myStr];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
